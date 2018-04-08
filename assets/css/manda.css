@@ -1,0 +1,12 @@
+
+body {
+	margin: 0;
+	border-top: 4px solid #E10098;
+}
+
+header {
+	width: 100%;
+	position: static;
+	text-align: center;
+	float: none;
+}
