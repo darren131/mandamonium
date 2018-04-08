@@ -16,23 +16,13 @@
   <body>
     <div class="wrapper">
       <header>
-        <a href="{{ site.github.url }}"> <h1>{{ site.title | default: site.github.repository_name }}</h1> </a>
-	
-	{% if site.logo %}
-	  <img src="{{site.logo}}" alt="Logo"></img>
-	{% endif %}
-
-	<p>{{ site.description | default: site.github.project_tagline }}</p>
+        {% if site.logo %}
+          <img src="{{site.logo}}" alt="Logo"></img>
+        {% endif %}
       </header>
-      <section>
-
-      {{ content }}
-
-      </section>
-      <footer>
-      </footer>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
     </div>
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 
 
   {% if site.google_analytics %}
