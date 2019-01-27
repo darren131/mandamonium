@@ -5,6 +5,19 @@ html,body {
     text-align: center;
     overflow: hidden;
 }
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 30px;
+  }
+}
 
 h1 {
     margin: auto;
@@ -13,7 +26,7 @@ h1 {
     color: #fff;
     padding: 50px;
     border-radius: 40px;
-    font-size: 5em;
+    /* font-size: 5em; */
 }
 
 p {
