@@ -25,7 +25,8 @@ request.onload = function () {
 	var gradient = "linear-gradient(" + angle + "deg, " + newColor1 + ", " + newColor2 + ")";
 
 	bg.style.background = gradient;
-	os.innerHTML = data.strategy.replace(/\s([^\s<]+)\s*$/, \'&nbsp\;$1');
+	var output = data.strategy;
+	os.innerHTML = output.replace(/\s([^\s<]+)\s*$/, \'&nbsp\;$1');
 
 ;
 }
