@@ -26,7 +26,7 @@ request.onload = function () {
 
 	bg.style.background = gradient;
 	var output = data.strategy;
-	output = string.replace(/ ([^ ]*)$/, '&nbsp;$1');
+	output = output.replace(/ ([^ ]*)$/, '&nbsp;$1');
 	os.innerHTML = output;
 
 ;
