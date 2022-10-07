@@ -2,7 +2,7 @@ const request = new XMLHttpRequest();
 const bg = document.getElementById('bg');
 const os = document.getElementById('os');
 
-request.open('GET', 'https://cors.io/?http://brianeno.needsyourhelp.org/draw', true);
+request.open('GET', 'https://cors-proxy.htmldriven.com/?url=http://brianeno.needsyourhelp.org/draw', true);
 request.onload = function () {
 
 	// Begin accessing JSON data here
